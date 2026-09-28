@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow Caps | Estilo Urbano</title>
+    <link rel="icon" type="image/jpg" href="image_f50f8a.jpg">
+    <style>
+        :root { --azul-electric:#0084ff; --naranja-flow:#ff7b00; --oscuro-total:#0a0a0a; --oscuro-premium:#111111; --blanco:#ffffff; }
+        body { font-family:'Inter','Segoe UI',sans-serif; margin:0; padding:0; background-color:var(--oscuro-total); color:var(--blanco); }
+        header { background:linear-gradient(180deg,#000 0%,var(--oscuro-premium) 100%); padding:4rem 0; text-align:center; border-bottom:2px solid var(--azul-electric); }
+        .logo-header { max-width:280px; height:auto; filter:drop-shadow(0 0 20px rgba(0,132,255,.4)); margin-bottom:1.5rem; }
+        header h1 { margin:0; font-size:3.5rem; letter-spacing:-2px; text-transform:uppercase; font-style:italic; font-weight:900; background:linear-gradient(to bottom,#fff,#888); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        header p { color:var(--naranja-flow); font-weight:800; text-transform:uppercase; letter-spacing:4px; margin-top:.5rem; font-size:.9rem; }
+        nav { background:rgba(0,0,0,.9); backdrop-filter:blur(15px); padding:1.2rem; text-align:center; position:sticky; top:0; z-index:1000; border-bottom:1px solid rgba(255,255,255,.1); }
+        nav a { color:var(--blanco); margin:0 20px; text-decoration:none; font-weight:700; font-size:.85rem; letter-spacing:2px; transition:.3s; }
+        nav a:hover { color:var(--azul-electric); text-shadow:0 0 10px var(--azul-electric); }
+        .container { max-width:1200px; margin:5rem auto; padding:0 25px; }
+        .productos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:50px; }
+        .card { background:var(--oscuro-premium); border-radius:24px; overflow:hidden; transition:all .5s ease; border:1px solid rgba(255,255,255,.05); position:relative; }
+        .card:hover { transform:translateY(-15px); border-color:var(--azul-electric); box-shadow:0 20px 40px rgba(0,132,255,.2); }
+        .card img { width:100%; height:350px; object-fit:cover; filter:grayscale(30%); transition:.5s; }
+        .card:hover img { filter:grayscale(0%); transform:scale(1.05); }
+        .card-content { padding:2.5rem; }
+        .card h2 { margin:0 0 1rem 0; font-size:2rem; text-transform:uppercase; font-weight:900; font-style:italic; }
+        .card p { color:#aaa; line-height:1.6; margin-bottom:2rem; }
+        .btn { display:inline-block; background:var(--blanco); color:var(--oscuro-total); padding:18px; text-decoration:none; border-radius:12px; font-weight:900; text-transform:uppercase; width:100%; box-sizing:border-box; text-align:center; transition:.3s; }
+        .btn:hover { background:var(--naranja-flow); color:white; transform:scale(1.02); }
+        .empresa-section { margin-top:6rem; margin-bottom:6rem; }
+        .empresa-title { text-align:center; font-size:2.8rem; margin-bottom:3rem; text-transform:uppercase; font-style:italic; font-weight:900; }
+        .empresa-title span { color:var(--naranja-flow); }
+        .empresa-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:30px; }
+        .empresa-card { background:var(--oscuro-premium); border:1px solid rgba(0,132,255,.25); border-radius:20px; padding:2.2rem; box-shadow:0 15px 35px rgba(0,0,0,.25); transition:.3s; }
+        .empresa-card:hover { transform:translateY(-8px); border-color:var(--azul-electric); box-shadow:0 15px 35px rgba(0,132,255,.15); }
+        .empresa-card h2 { margin-top:0; color:var(--azul-electric); text-transform:uppercase; font-size:1.6rem; font-style:italic; }
+        .empresa-card p { color:#ccc; line-height:1.7; margin-bottom:0; }
+        footer { text-align:center; padding:6rem 2rem; background:#000; border-top:2px solid var(--azul-electric); }
+        footer span { color:var(--azul-electric); font-weight:900; }
+        @media (max-width:600px) { header h1{font-size:2.5rem} nav a{display:inline-block;margin:8px 10px} .container{margin:3rem auto} }
+    </style>
+</head>
+<body>
+<header>
+<img src="image_f50f8a.jpg" alt="Flow Caps Logo" class="logo-header">
+<h1>FLOW CAPS.</h1><p>Urban Lifestyle & Trends</p>
+</header>
+<nav>
+<a href="#gorras">DROP RECIENTE</a><a href="#gafas">ACCESORIOS</a><a href="#camisas">COLECCIONES</a><a href="#empresa">EMPRESA</a>
+</nav>
+<div class="container"><div class="productos-grid">
+<div class="card" id="gorras"><img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=500&q=80" alt="Gorras"><div class="card-content"><h2>Gorras</h2><p>La esencia de Flow Caps. Calidad inigualable para quienes no aceptan imitaciones.</p><a href="#" class="btn">Explorar Drop</a></div></div>
+<div class="card" id="gafas"><img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&w=500&q=80" alt="Gafas"><div class="card-content"><h2>Gafas</h2><p>Diseño futurista y protección urbana. El complemento necesario para tu estilo diario.</p><a href="#" class="btn">Ver Modelos</a></div></div>
+<div class="card" id="camisas"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Camisas"><div class="card-content"><h2>Camisas</h2><p>Streetwear de alto nivel. Prendas diseñadas para durar y destacar en la calle.</p><a href="#" class="btn">Comprar</a></div></div>
+</div></div>
+<section class="container empresa-section" id="empresa"><h1 class="empresa-title">Sobre <span>Flow Caps</span></h1><div class="empresa-grid">
+<div class="empresa-card"><h2>Misión</h2><p>Diseñar, fabricar y comercializar gorras de alta calidad y funcionalidad, satisfaciendo las necesidades de nuestros clientes.</p></div>
+<div class="empresa-card"><h2>Visión</h2><p>Ser una marca reconocida por ofrecer gorras innovadoras, de calidad y con un estilo urbano que represente la personalidad de nuestros clientes.</p></div>
+<div class="empresa-card"><h2>Objetivo</h2><p>Ofrecer productos funcionales y modernos, manteniendo altos estándares de calidad y buscando la satisfacción y confianza de nuestros clientes.</p></div>
+</div></section>
+<footer><p>&copy; 2026 <span>FLOW CAPS.</span> | El estilo lo pones tú.</p></footer>
+</body></html>
